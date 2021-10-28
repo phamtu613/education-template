@@ -1,0 +1,45 @@
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+body {
+  font-family: $primary-font;
+  line-height: 1.4;
+  color: $text-color;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+input,
+button,
+textarea,
+select {
+  font-weight: 300;
+  outline: none;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  font-size: 1.4rem;
+  font-family: $primary-font;
+  font-weight: 500;
+  color: $text-color;
+}
+button:focus {
+  background-color: transparent;
+  outline: none;
+}
+button {
+  cursor: pointer;
+}
+
+// .space-menu-response {
+//   transform: translate(0);
+//   margin-top: 30rem;
+// }
+// .space-menu-response-home2 {
+//   margin-top: 40rem;
+// }

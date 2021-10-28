@@ -1,0 +1,188 @@
+.footer {
+  margin-top: -51rem;
+  font-size: 1.4rem;
+  font-family: $third-font;
+  color: #969595;
+  &-wrapper {
+    background-color: $title-color;
+    padding: 8rem 0 11rem;
+  }
+  &-top {
+    @include flexBox(stretch, space-between);
+    & > div {
+      width: calc(25% - 1.5rem);
+    }
+  }
+  &-logo {
+    display: block;
+    padding-bottom: 2.5rem;
+    cursor: pointer;
+  }
+  &-desc {
+    padding-bottom: 2.3rem;
+    margin-bottom: 2.3rem;
+    border-bottom: 1px solid #303744;
+  }
+  &-socials {
+    @include flexBox(stretch);
+  }
+  &-socials-icon {
+    display: block;
+    padding-right: 1.8rem;
+    i {
+      color: #4a4a4a;
+      transition: all 0.25s;
+      font-size: 1.8rem;
+      &:hover {
+        color: #0089fd;
+      }
+    }
+  }
+  &-title {
+    text-transform: uppercase;
+    color: #fff;
+    height: 6rem;
+    font-size: 1.4rem;
+    font-family: $third-font;
+    font-weight: 500;
+  }
+  &-featured-learning {
+    padding-bottom: 2.5rem;
+    cursor: pointer;
+    &:hover {
+      color: #ababab;
+    }
+    span {
+      color: #6b6b6b;
+      font-size: 1.2rem;
+      font-family: $third-font;
+    }
+  }
+  &-featured-learning:last-child {
+    padding-bottom: 0;
+  }
+  &-form {
+    padding-left: 7px;
+  }
+  &-form-desc {
+    font-size: 1.3rem;
+    padding-bottom: 2.2rem;
+  }
+  &-input-button {
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+    height: 3.9rem;
+    input {
+      width: 100%;
+      flex: 1;
+      padding: 1rem 2rem;
+      background-color: transparent;
+      font-size: 1.2rem;
+      font-family: $four-font;
+    }
+    button {
+      background-color: $primary-color;
+      color: white;
+      padding: 1.4rem;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      font-family: $third-font;
+    }
+  }
+  &-copyright {
+    background-color: #1d232e;
+    color: #6b6b6b;
+    font-family: $third-font;
+    font-size: 1.3rem;
+    min-height: 6rem;
+  }
+  &-copyright-wrapper {
+    @include flexBox(center, space-between);
+  }
+  &-copyright-menu {
+    @include flexBox(stretch, space-between);
+  }
+  &-copyright-link {
+    padding: 2rem 1rem;
+    display: block;
+    transition: all 0.25s;
+    cursor: pointer;
+    &:hover {
+      color: #ababab;
+    }
+  }
+  @include maxWidth(1024px) {
+    margin-top: 0;
+    &-wrapper {
+      padding: 5rem 0 5rem;
+    }
+    &-top {
+      flex-wrap: wrap;
+      & > div {
+        width: calc(50% - 1.5rem);
+      }
+    }
+    &-title {
+      height: auto;
+      padding-bottom: 3rem;
+    }
+    &-featured-learning {
+      padding-bottom: 1.5rem;
+    }
+    &-desc {
+      border-bottom: none;
+    }
+    &-form,
+    &-learning {
+      border-top: 1px solid #303744;
+      padding-top: 2.3rem;
+      margin-top: 1rem;
+    }
+    &-input-button {
+      button {
+        padding: 1.4rem 2rem;
+      }
+    }
+    &-copyright-wrapper {
+      display: block;
+      text-align: center;
+    }
+    &-copyright-text {
+      display: block;
+      padding-top: 1.5rem;
+      padding-bottom: 1rem;
+    }
+    &-copyright-link {
+      padding: 1rem 0.5rem;
+    }
+  }
+  @include maxWidth(767px) {
+    &-top {
+      & .footer-intro,
+      & .footer-form {
+        width: 100% !important;
+      }
+    }
+    &-intro {
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid #303744;
+    }
+    &-learning {
+      margin-top: 0;
+      padding-top: 0;
+      border: none;
+    }
+    &-featured,
+    &-learning {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.home-page2 {
+  .footer {
+    margin-top: 1.5rem;
+  }
+}

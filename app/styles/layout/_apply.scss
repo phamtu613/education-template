@@ -1,0 +1,210 @@
+.apply {
+  position: relative;
+  z-index: 1;
+  background: url("../images/background-apply.png") no-repeat center/cover;
+  height: 40rem;
+  top: -43.5rem;
+  &-image-left,
+  &-image-right {
+    position: absolute;
+  }
+  &-image-left {
+    top: 5rem;
+    left: 11.5rem;
+    z-index: -1;
+  }
+  &-image-right {
+    top: 6.7rem;
+    right: 16rem;
+    z-index: -1;
+  }
+  &-content {
+    @include flexBox(stretch, space-between);
+  }
+  &-text {
+    width: calc(60% - 1.5rem);
+    padding-top: 16.5rem;
+  }
+  &-wrapper-form {
+    width: calc(40% - 1.5rem);
+  }
+  &-form {
+    background: url("../images/img-bg-form.png") no-repeat center/cover;
+    padding: 4rem 4rem 5.5rem 4.5rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 10px;
+    transform: translateY(-7.5rem);
+    margin-left: auto;
+  }
+  &-subtitle {
+    font-family: $secondary-font;
+    color: $title-color;
+    font-weight: 400;
+    letter-spacing: 5.3px;
+    span {
+      color: #fb384d;
+    }
+  }
+  &-title {
+    font-family: $secondary-font;
+    color: $title-color;
+    font-weight: 700;
+    font-size: 4rem;
+    letter-spacing: -2px;
+  }
+  &-form-title {
+    font-family: $secondary-font;
+    color: #202020;
+    font-weight: 400;
+    font-size: 2.4rem;
+    letter-spacing: 1rem;
+    text-transform: capitalize;
+    text-align: center;
+    padding-bottom: 5rem;
+  }
+  &-input {
+    display: block;
+    border-bottom: 1px solid #d7e4ed;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2.5rem;
+    width: 100%;
+    background: transparent;
+    text-indent: 1.5rem;
+  }
+  &-input--lname {
+    padding-bottom: 0.7rem;
+    margin-bottom: 3rem;
+  }
+  &-input--email {
+    padding-bottom: 1rem;
+    margin-bottom: 3rem;
+  }
+  &-input--password {
+    margin-bottom: 3rem;
+    padding-bottom: 0.5rem;
+  }
+  &-input--confirm {
+    margin-bottom: 3rem;
+    padding-bottom: 0.7rem;
+  }
+  &-policy {
+    @include flexBox(center);
+  }
+  &-label--checkbox {
+    font-size: 1.3rem;
+    color: #87959c;
+    font-weight: 500;
+    padding-left: 1.4rem;
+    margin-bottom: 0;
+  }
+  &-call {
+    margin: 3.4rem 0 2rem;
+    @include flexBox();
+  }
+  &-submit {
+    padding: 1.5rem 3.5rem;
+    font-family: $secondary-font;
+    color: #fff;
+    background-color: $primary-color;
+    border-radius: 3rem;
+    letter-spacing: 1px;
+    margin-right: 4rem;
+    height: 4.8rem;
+    &:hover,
+    &:focus {
+      background-color: #38b573;
+    }
+  }
+  &-phone {
+    p {
+      font-size: 1.3rem;
+      font-weight: 500;
+      padding-bottom: 2px;
+      padding-top: 6px;
+    }
+    a {
+      font-size: 1.5rem;
+      font-weight: 500;
+      cursor: pointer;
+      color: $text-color;
+    }
+  }
+  &-login {
+    color: #87959c;
+    font-size: 1.3rem;
+    font-weight: 500;
+    border-bottom: 2px solid #d5d9dd;
+  }
+  @include minWidth(1200px) {
+    .container {
+      padding: 0;
+    }
+  }
+  @include maxWidth(1024px) {
+    top: 0;
+    &-title {
+      font-size: 3.5rem;
+    }
+    &-form {
+      padding: 2rem 2rem 2.5rem;
+      transform: translateY(-4rem);
+    }
+    &-form-title {
+      font-size: 2rem;
+      padding-bottom: 2rem;
+    }
+  }
+  @include maxWidth(767px) {
+    height: 95rem;
+    &-wrapper-form {
+      margin-left: 0;
+      width: 100%;
+    }
+    &-form {
+      transform: translateY(10rem);
+    }
+    &-image-left {
+      left: 1rem;
+    }
+    &-image-right {
+      top: 6rem;
+      right: 1rem;
+    }
+    &-text {
+      width: 100%;
+    }
+    &-content {
+      display: block;
+    }
+  }
+
+  @include maxWidth(420px) {
+    height: 88rem;
+    &-call {
+      margin-top: 3rem;
+    }
+    &-submit {
+      margin-right: 0;
+      padding: 0;
+      height: 4rem;
+      width: 11rem;
+    }
+    &-phone {
+      margin-left: auto;
+      p {
+        padding: 0;
+      }
+    }
+    &-image-right {
+      right: 0;
+      top: 3rem;
+    }
+    &-image-left {
+      left: 0;
+      top: 2rem;
+    }
+    &-form {
+      transform: translateY(5rem);
+    }
+  }
+}

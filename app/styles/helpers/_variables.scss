@@ -1,0 +1,34 @@
+$fa-font-path: "./fonts" !default;
+
+$primary-color: #ffc178;
+$title-color: #252c3a;
+$text-color: #5a6e79;
+$text-color-light: #969595;
+$border-shadow-color: #fdf5ed;
+$primary-font: "Work Sans", sans-serif;
+$secondary-font: "Montserrat", sans-serif;
+$third-font: "Roboto", sans-serif;
+$four-font: "Open Sans", sans-serif;
+$wrapper: 1920px;
+$container: 1140px;
+
+@font-face {
+  font-family: $secondary-font;
+  src: url("#{$fa-font-path}/Montserrat-Light.otf");
+  src: url("#{$fa-font-path}/Montserrat-Regular.otf"),
+    url("#{$fa-font-path}/Montserrat-Bold.otf");
+}
+@font-face {
+  font-family: $primary-font;
+  src: url("#{$fa-font-path}/WorkSans-Regular.otf"),
+    url("#{$fa-font-path}/WorkSans-Medium.otf"),
+    url("#{$fa-font-path}/WorkSans-Bold.otf");
+}
+@font-face {
+  font-family: $four-font;
+  src: url("#{$fa-font-path}/OpenSans-Regular.ttf");
+}
+@font-face {
+  font-family: $third-font;
+  src: url("#{$fa-font-path}/Roboto-Regular.ttf");
+}
